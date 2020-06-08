@@ -234,7 +234,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             try{
                 Class.forName("com.mysql.jdbc.Driver").newInstance();
-                Connection connection = DriverManager.getConnection(  "jdbc:mysql://10.100.102.5:3306/android","andro","andro" );
+                Connection connection = DriverManager.getConnection(  "jdbc:mysql://your-ip-and-port/android","andro","andro" );
                 Statement statement =connection.createStatement();
 
                 //update at the start and creating db
